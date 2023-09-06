@@ -3,5 +3,6 @@
 
 
 class LockedClass:
-    """"Locked class using slots to allocates memory."""
-    __slots__ = "first_name",
+    """Locked class using slots to allocates memory."""
+
+    __slots__ = ["first_name"]
