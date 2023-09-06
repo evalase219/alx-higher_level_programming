@@ -71,7 +71,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
         for i in range(self.__height):
-            print("#" * self.__width, end=""
+            print("{}".format(self.print_symbol) * self.__width, end=""
                     if i == (self.__height - 1) else "\n")
         return ""
 
