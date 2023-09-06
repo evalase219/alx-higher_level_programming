@@ -26,6 +26,10 @@ class Rectangle:
         self.height = height
         Rectangle.number_of_instances += 1
 
+    @classmethod
+    def printed_symbol(cls):
+        cls.print_symbol = print_symbol
+
     @property
     def width(self):
         """Get/set the current width of the rectangle"""
@@ -66,12 +70,10 @@ class Rectangle:
         """Print the diagram of a rectangle with # character"""
         if self.__width == 0 or self.__height == 0:
             return ("")
-        rect = []
-        for column in range(self.__height):
-            [rect.append(str(self.print_symbol)) for r in range(self.__width)]
-        if column != self.__height - 1:
-            rect.append("\n")
-        return ("".join(rect))
+        for i in range(self.__height):
+            print("#" * self.__width, end=""
+                    if i == (self.__height - 1) else "\n")
+        return ""
 
     def __repr__(self):
         """Return a string representation of the rectangle."""
