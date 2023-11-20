@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Prints all the state that contain the letter 'a'
 from the database hbtn_0e_6_usa
 """
