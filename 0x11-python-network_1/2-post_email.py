@@ -19,4 +19,3 @@ if __name__ == "__main__":
         content = response.read().decode('utf-8')
     # Display the body of the response
     print(content)
-
